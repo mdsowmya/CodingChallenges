@@ -1,0 +1,5 @@
+"""
+Get the path and name of the file that is currently executing
+"""
+import os
+print(os.path.realpath("abc.txt"))

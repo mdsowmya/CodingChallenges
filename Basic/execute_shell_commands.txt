@@ -1,0 +1,6 @@
+"""
+Call an external command in Python
+run on linux
+"""
+import subprocess
+subprocess.call(['ls','-l'])
