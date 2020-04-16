@@ -1,0 +1,6 @@
+"""
+Print the doucments of python built-in function
+"""
+
+print(pow.__doc__)
+print(print.__doc__)
