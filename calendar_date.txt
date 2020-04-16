@@ -1,0 +1,13 @@
+"""
+Python program to print the calendar of a given month and year
+Python program to calculate number of days between two dates
+"""
+import calendar
+from datetime import date
+
+print(calendar.month(2020,10))
+f_date = date(2020,10,25)
+l_date = date(2020,11,6)
+print(l_date-f_date)
+
+

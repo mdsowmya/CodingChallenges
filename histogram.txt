@@ -1,0 +1,11 @@
+"""
+Python program to create a histogram from a given list of integers
+"""
+list = [2,3,6,5]
+
+for n in list:
+    count = 1
+    while(count<=n):
+        print("*", end=" ")
+        count=count+1
+    print("\n")

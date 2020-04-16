@@ -1,0 +1,6 @@
+"""
+Python program to accept a filename from the user and print the extension of that
+"""
+a = input("Enter the file name with extension: ")
+b = a.split('.')
+print(b[1])

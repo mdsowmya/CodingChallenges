@@ -1,0 +1,6 @@
+"""
+Python program which accepts user's first name and last name and print them in reverse order with a space between them
+"""
+a,b=input("Enter 2 names: ").split()
+a,b=b,a
+print(a + " " + b)
