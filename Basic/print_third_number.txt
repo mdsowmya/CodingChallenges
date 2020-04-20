@@ -1,0 +1,13 @@
+"""
+Remove and print every third number from a list of numbers until the list becomes empty
+"""
+list1 = [10,20,30,40,50,60,70,80,90]
+
+position = 3 - 1
+index = 0
+length = len(list1)
+
+while (length>0):
+  index = (position+index)%length
+  print(list1.pop(index))
+  length = length-1

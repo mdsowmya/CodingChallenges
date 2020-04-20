@@ -1,0 +1,11 @@
+'''
+How to open web broswer
+'''
+import webbrowser
+webbrowser.open('http://www.gmail.com')
+
+###
+#or
+###
+import os
+os.system("start \"\" https://www.gmail.com")
