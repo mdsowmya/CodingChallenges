@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<body>
+  <h2>LinkedList Representation</h2>
+  <form action="/linkedlist" method="post">
+    Input text:<br>
+    <input type="linkedlisttext" name="text_input" value="">
+    <br>
+    <input type="submit" name="insert at start" value="insert at start" required="required" pattern="[A-Za-z0-9]{1,20}">
+    <br>
+    <input type="submit" name="insert at end" value="insert at end" required="required" pattern="[A-Za-z0-9]{1,20}">
+    <br>
+    <input type="submit" name="search item" value="search item" required="required" pattern="[A-Za-z0-9]{1,20}">
+    <br>
+    <input type="submit" name="clear" value="clear" required="required" pattern="[A-Za-z0-9]{1,20}">
+  </form>
+  <div id='foo'>
+    <br>
+    {% for key, value in comments.items() %}
+    <tr>
+       <td> Key: {{ key }} </td>
+       <td> Value: {{ value }} </td>
+    </tr>
+    {% endfor %}
+    <br>
+    {% for item in searchitem %}
+    <div class="row">
+      {{ item }}
+    </div>
+    {% endfor %}
+  </div>
+</body>
+</html>

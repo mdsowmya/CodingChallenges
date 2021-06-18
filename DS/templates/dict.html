@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<body>
+  <h2>Dictionary Representation</h2>
+  <form action="/dictionary" method="post">
+    Input text:<br>
+    <input type="dicttext" name="text_input" value="">
+    <br>
+    <input type="submit" name="insert" value="insert" required="required" pattern="[A-Za-z0-9]{1,20}">
+    <br>
+    <input type="submit" name="remove" value="remove" required="required" pattern="[A-Za-z0-9]{1,20}">
+    <br>
+    <input type="submit" name="clear" value="clear" required="required" pattern="[A-Za-z0-9]{1,20}">
+  </form>
+  <div id='foo'>
+    <br>
+    {% for key, value in comments.items() %}
+    <tr>
+       <td> Key: {{ key }} </td>
+       <td> Value: {{ value }} </td>
+    </tr>
+    {% endfor %}
+  </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<body>
+  <h2>Set Representation</h2>
+  <form action="/set" method="post">
+    Input text:<br>
+    <input type="settext" name="text_input" value="">
+    <br>
+    <input type="submit" name="insert" value="insert" required="required" pattern="[A-Za-z0-9]{1,20}">
+    <br>
+    <input type="submit" name="remove" value="remove" required="required" pattern="[A-Za-z0-9]{1,20}">
+    <br>
+    <input type="submit" name="clear" value="clear" required="required" pattern="[A-Za-z0-9]{1,20}">
+  </form>
+  <div id='foo'>
+    <br>
+    {% for comment in comments %}
+    <div class="row">
+      {{ comment }} 
+    </div>
+    {% endfor %}
+  </div>
+</body>
+</html>
